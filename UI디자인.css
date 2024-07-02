@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+header, main, footer, section, div, table, form {
+  border: 1px solid black;
+}
+
+
+body {
+  display : flex;
+  flex-direction: column;
+
+  /* 최소 높이 : 화면 높이 100% */
+  min-height: 100vh;
+}
+
+
+/* header*/
+header {
+  height: 75px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* main*/
+main {
+  height: 1000px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main-1 {
+  height: 500px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.main-2 {
+  height: 250px;
+
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.m2-table {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.font-고딕 {
+  font-family: '고딕';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main-3 {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "ONE-Mobile-POP";
+}
+
+.m3-form {
+  width: 30%;
+  height: 100%;
+}
+
+/* 웹 폰트 적용 */
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* footer*/
+footer {
+  height: 50px;
+}
+
+.fixed-container > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  text-decoration: none; /* 밑줄 삭제 */
+  color: black;
+  font-weight: bold;
+  line-height: 38px; /* 한 줄이 차지하는 높이 -> 장평 */
+  user-select: none; /* 블럭 금지 */
+  border-radius: 50%; /* 원 근처에서 클릭되지 않게 */
+}
